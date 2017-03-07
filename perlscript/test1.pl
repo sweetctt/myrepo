@@ -6,7 +6,7 @@ use XML::Twig;
 #use DateTime;  
 
 my $logfile = "build.log"; 
-my %mod_mail
+#my %mod_mail
 initlog();
 readcmdconfig("config_cmd.xml");
 
@@ -45,7 +45,7 @@ sub readmailconfig{
 	my $xmlfile = shift (@_);
 	my $xmlhandle = XML::Twig->new();
 	$xmlhandle->parsefile("config_mail.xml");
-	my @module_list= $xmlhandle->children('module");
+	my @module_list= $xmlhandle->children('module');
 }
 
 
@@ -55,8 +55,8 @@ sub readmailconfig{
 sub initlog{
 
 	my $today=&getTime();
-	#my $daystring= $today->{year}+$today->{month}+$today->{day};
-	$logfile= 'build_'.$today->{date}.'.log';
+	my $daystring= $today->{year}.$today->{month}.$today->{day};
+	$logfile= 'build_'.$daystring.'.log';
 	print "$logfile\r\n";
 	#my $logfile = "build.log";
 	if(-e $logfile){
