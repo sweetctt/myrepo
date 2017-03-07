@@ -1,0 +1,8 @@
+<build_cmd>
+<cmd line = "win32.exe %modulepath%">
+	<list modulepath= "C:\sweet\tt1.dsW" modulename ="module1"/>
+	<list modulepath= "C:\sweet\tt2.dsW" modulename ="module2"/>
+	<list modulepath= "C:\sweet\tt3.dsW" modulename ="module3"/>
+</cmd>
+
+</build_cmd>

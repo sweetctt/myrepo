@@ -1,0 +1,17 @@
+<mail>
+	<module name = "module1">
+		<list address = "tt11@gmail.com"/>
+		<list address = "tt12@gmail.com"/>
+	</module>
+	<module name = "module2">
+		<list address = "tt21@gmail.com"/>
+		<list address = "tt22@gmail.com"/>
+	</module>
+	<module name = "module3">
+		<list address = "tt31@gmail.com"/>
+		<list address = "tt32@gmail.com"/>
+		<list address = "tt33@gmail.com"/>
+	</module>
+	
+	
+</mail>
